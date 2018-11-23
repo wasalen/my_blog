@@ -202,4 +202,8 @@ REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'my_blog.utils.exceptions.exception_handler',
 }
 
+# 配置用户上传的文件
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 需要配置TEMPLATES
+
 AUTH_USER_MODEL = 'blogs.User'

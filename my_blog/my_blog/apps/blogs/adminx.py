@@ -22,17 +22,17 @@ class GlobalSettings:
     menu_style = 'accordion'  # 开启分组折叠
 
 class BlogAdmin:
-    list_display = ['title', 'category', 'author','add_time', 'read_nums', 'conment_nums', 'tag']
+    list_display = ['title', 'category', 'author','create_time', 'read_nums', 'conment_nums', 'tag']
     list_filter = ['title', 'category', 'author','read_nums', 'conment_nums', 'tag']
-    search_fields = ['title', 'category', 'author','add_time', 'read_nums', 'conment_nums', 'tag']
-    readonly_fields = ['add_time', 'read_nums', 'conment_nums','edit_time']
+    search_fields = ['title', 'category', 'author','create_time', 'read_nums', 'conment_nums', 'tag']
+    readonly_fields = ['create_time', 'read_nums', 'conment_nums','update_time']
 
 
 class ConmentAdmin:
     pass
 
 class CategoryAdmin:
-    pass
+    list_display = ['name', 'create_time']
 
 class TagAdmin:
     pass
